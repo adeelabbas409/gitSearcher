@@ -1,6 +1,6 @@
 import React from 'react';
 import GitLogo from '../../assests/media/gitLogo.png';
-import { searchFormProps } from './interfaces';
+import { searchFormProps } from '../interfaces';
 import './search-form.scss';
 const SearchForm: React.FC<searchFormProps> = ({onChangeSearch, onChangeType, searchValue, typeValue}): JSX.Element => {
     return <div className="formSec">

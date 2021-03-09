@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.scss";
 import "./assests/sass/common.scss";
 import SearchForm from "./git-search/search-form/search-form-component";
-import SearchList from "./git-search/search-form/search-list/search-list-component";
+import SearchList from "./git-search/search-list/search-list-component";
 import {
   setSearchResults,
   setSearchType,
@@ -13,7 +13,7 @@ import {
 import { getSearchResults } from "./services/searchService";
 import { useDispatch, useSelector } from "react-redux";
 import _ from "lodash";
-import { searchCardProps } from "./git-search/search-form/interfaces";
+import { searchCardProps } from "./git-search/interfaces";
 
 function App() {
   const [type, setType] = useState("users");
