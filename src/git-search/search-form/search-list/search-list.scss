@@ -1,0 +1,15 @@
+@import "../../../assests/sass/mixin.scss";
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 40px 20px;
+    @include breakpoint(DesktopSM) {
+        justify-content: space-between;
+      }
+}
+
+.infinite-scroll-component__outerdiv{
+    width: 100%;
+}

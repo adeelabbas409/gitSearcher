@@ -1,0 +1,78 @@
+@import "../../../assests/sass/mixin.scss";
+@import "../../../assests/sass/common.scss";
+.Card {
+  background: #232323;
+  border-radius: 5px;
+  border: 1px solid #5d5d5d;
+  width: 32%;
+  margin: 5px;
+  display: flex;
+  @include breakpoint(DesktopSM) {
+    flex-direction: column;
+    width: 31%;
+  }
+  @include breakpoint(Tablet) {
+    width: 47%;
+  }
+  @include breakpoint(mobileSM) {
+    width: 100%;
+    flex-direction: row;
+  }
+  .imgDiv {
+    overflow: hidden;
+    width: 40%;
+    @include breakpoint(DesktopSM) {
+      height: 100%;
+      overflow: hidden;
+      width: 100%;
+    }
+    @include breakpoint(mobileSM) {
+      overflow: hidden;
+      width: 40%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .highLights {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0px;
+    p {
+      @extend .makeEclips;
+      margin: 0px;
+      font-size: 18px;
+      text-align: left;
+      padding: 0px 10px;
+      &.subline {
+        font-size: 13px;
+        @extend .makeEclips;
+      }
+    }
+  }
+  .Info-Box {
+    width: 56%;
+    @include breakpoint(DesktopSM) {
+      width: 100%;
+    }
+    @include breakpoint(mobileSM) {
+      width: 56%;
+    }
+  }
+  ul {
+    list-style: none;
+    text-align: center;
+    padding: 0px 10px;
+    margin: 0px;
+    li {
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0px;
+      .value {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@mixin breakpoint($point) {
+   
+    // small breakPoint for material
+    @if $point==DesktopSM {
+      @media (max-width: 960px) {
+        @content;
+      }
+    }
+  
+    @if $point==Tablet {
+      @media (max-width: 768px) {
+        @content;
+      }
+    } 
+
+    @if $point==mobileSM {
+      @media (max-width: 480px) {
+        @content;
+      }
+    }
+   
+  }
+  
